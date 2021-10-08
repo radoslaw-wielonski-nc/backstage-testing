@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Company-devs-1.2
+  description: The Company
+  links:
+    - url: http://www.company.com/
+      title: Website
+spec:
+  type: department
+  profile:
+    displayName: Company devs 1.2
+    email: info@example.com
+    picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
+  parent: Company
+  children: [cloud, onprem]
