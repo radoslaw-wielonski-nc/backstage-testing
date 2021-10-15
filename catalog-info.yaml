@@ -14,3 +14,5 @@ spec:
   type: package
   owner: team-a
   lifecycle: experimental
+  definition:
+    $text: https://github.com/radoslaw-wielonski-nc/backstage-testing/blob/main/swaggersource.json
