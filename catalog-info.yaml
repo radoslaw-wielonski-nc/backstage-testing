@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: demo
   description: backstage test teams
+  annotations:
+    backstage.io/definition-at-location: https://github.com/radoslaw-wielonski-nc/backstage-testing/blob/main/api-info.yaml
   tags:
     - python
     - package
@@ -14,5 +16,3 @@ spec:
   type: package
   owner: team-a
   lifecycle: experimental
-  definition:
-    $text: https://github.com/radoslaw-wielonski-nc/backstage-testing/blob/main/swaggersource.json
