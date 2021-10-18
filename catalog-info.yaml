@@ -1,19 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Location
 metadata:
   name: demo
-  description: backstage test teams
-  annotations:
-  tags:
-    - python
-    - package
-  links:
-    - url: https://example.com/user
-      title: Examples Users
-      icon: user
+  description: all yamls for backstage
 spec:
-  type: package
-  owner: team-a
-  lifecycle: experimental
   targets:
     - ./api-info.yaml
+    - ./component-info.yaml
