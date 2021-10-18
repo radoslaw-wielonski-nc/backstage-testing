@@ -14,4 +14,4 @@ spec:
   lifecycle: production
   owner: team-a
   definition:
-    $text: https://raw.githubusercontent.com/radoslaw-wielonski-nc/backstage-testing/main/swaggersource.json
+    $json: https://raw.githubusercontent.com/radoslaw-wielonski-nc/backstage-testing/main/swaggersource.json
