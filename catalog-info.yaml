@@ -4,7 +4,7 @@ metadata:
   name: demo
   description: backstage test teams
   annotations:
-    backstage.io/definition-at-location: url:https://github.com/radoslaw-wielonski-nc/backstage-testing/blob/main/api-info.yaml
+    backstage.io/definition-at-location: 'url:https://raw.githubusercontent.com/APIs-guru/openapi-directory/master/APIs/spotify.com/v1/swagger.yaml'
   tags:
     - python
     - package
