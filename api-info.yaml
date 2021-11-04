@@ -1,5 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
+tags:
+  - spotify
+  - rest
 metadata:
   name: bsdemo
   description: The Spotify web API
