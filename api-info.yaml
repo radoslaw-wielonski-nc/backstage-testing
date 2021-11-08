@@ -5,6 +5,7 @@ metadata:
   description: The Spotify web API
   tags:
     - spotify
+    - public
   links:
     - url: https://admin.example-org.com
       title: Admin Dashboard
