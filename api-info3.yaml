@@ -10,4 +10,4 @@ spec:
   lifecycle: production
   owner: team-a
   definition:
-    $text: https://raw.githubusercontent.com/radoslaw-wielonski-nc/backstage-testing/main/asyncapi.yaml
+    $text: https://github.com/radoslaw-wielonski-nc/backstage-testing/blob/main/asyncapi.yaml
