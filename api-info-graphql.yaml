@@ -1,0 +1,14 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: graphql
+  description: The graphql schema example
+  tags:
+    - public
+spec:
+  type: graphql
+  lifecycle: production
+  owner: team-a
+  definition:
+    $text: https://github.com/radoslaw-wielonski-nc/backstage-testing/blob/main/schema.graphql
