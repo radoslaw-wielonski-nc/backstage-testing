@@ -1,0 +1,26 @@
+name: AWS example workflow
+on:
+  push
+env:
+  BUCKET_NAME : "techdocs-baseplate-bucket"
+  AWS_REGION : "eu-west-1"
+# permission can be added at job level or workflow level    
+permissions:
+      id-token: write
+      contents: write    # This is required for actions/checkout@v1
+jobs:
+  S3PackageUpload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v1
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          role-to-assume: arn:aws:iam::954143161792:role/GithubRole
+          role-session-name: samplerolesession
+          aws-region: ${{ env.AWS_REGION }}
+      # Upload a file to AWS s3
+      - name:  Copy component-info.yaml to s3
+        run: |
+          aws s3 cp ./component-info.yaml s3://${{ env.BUCKET_NAME }}/
